@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:javaee="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <javaee:display-name>Archetype Created Web Application</javaee:display-name>
+  <servlet>
+    <javaee:description></javaee:description>
+    <javaee:display-name>ServletDemo</javaee:display-name>
+    <servlet-name>ServletDemo</servlet-name>
+    <servlet-class>com.cys.jsptohtml.servlet.Login</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletDemo</servlet-name>
+    <url-pattern>/demo</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>  
+   <servlet-name>Index</servlet-name>  
+   <servlet-class>com.cys.jsptohtml.servlet.JspToHtmlServlet</servlet-class>  
+   <load-on-startup>3</load-on-startup>
+ </servlet>  
+  
+ <servlet-mapping>  
+   <servlet-name>Index</servlet-name>  
+   <url-pattern>/index</url-pattern>  
+ </servlet-mapping> 
+ 
+  <servlet>  
+   <servlet-name>DelUser</servlet-name>  
+   <servlet-class>com.cys.jsptohtml.servlet.DelUser</servlet-class>  
+   <load-on-startup>3</load-on-startup>
+ </servlet>  
+  
+ <servlet-mapping>  
+   <servlet-name>DelUser</servlet-name>  
+   <url-pattern>/DelUser.do</url-pattern>  
+ </servlet-mapping> 
+</web-app>
